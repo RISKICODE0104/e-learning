@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../image/wallpaper-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    min-height: 100vh; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1; 
+}
+
+/*** Area Form Start ***/
+.container-title {
+    max-width: 530px;
+    margin: 11px auto;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    background-color: rgba(128, 125, 125, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.title-login h1 {
+    font-size: 28px;
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+form {
+    margin-top: 20px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 12px;
+    background-color: transparent !important;
+    color: white;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="password"] {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+button[type="submit"]:focus,
+input[type="password"]:focus,
+button[type="button"]:focus,
+select.form-control:focus {
+    border-color: #e6ae76;
+    outline: none;
+    box-shadow: 0 0 3px #e6ae76;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #d59562; 
+    color: #000000;
+    border: none;
+    margin-top: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease; 
+}
+
+button[type="submit"]:hover {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #d59562; 
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;  
+}
+
+.separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #ccc;
+}
+
+.or-text {
+    padding: 0 10px;
+}
+
+.signup-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #8b8585;
+    text-decoration: none;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    margin-top: -15px;
+}
+
+.forgot-password:hover {
+    color: #8b8585;
+}
+
+
+/*** Area From End***/

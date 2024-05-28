@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning</title>
+
+    <!--- Area Link css Star --->
+    <link rel="stylesheet" href="../learn/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--- Area Link css End --->
+
+    <!--- Area google web fonst Star --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+    <!--- Area google web fonst End --->
+
+    <!--- Area Link Bootstrap Star --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!--- Area Link Bootstrap Star --->
+
+</head>
+<body>
+    
+    <section>
+        <div class="overlay">
+            <div class="container-title">
+
+                <div class="title-login">
+                    <h1>Login</h1>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="email" style="display: flex; align-items: center; color: #ffff;">Email </label>
+                        <input class="form-control" type="email" name="email" id="email" required style="color: #ffffff;">
+                    </div>                    
+    
+                    <div class="form-group">
+                        <label for="password" style="color: #ffff">Password</label>
+                        <div class="password-container">
+                            <input class="form-control password-input" type="password" name="password" id="password" required style="color: #ffffff;">
+                            <span id="toggle-password" class="password-toggle" onclick="togglePasswordVisibility()">
+                                <i id="eye-icon" class="far fa-eye" style="color: #ffff;"></i>
+                            </span>
+                            <div class="slash"></div> 
+                        </div>
+                    </div>
+    
+                    <div class="form-group d-flex justify-content-between align-items-center">
+                        <div class="custom-control custom-checkbox" style="margin-top: -18px;">
+                            <input type="checkbox" class="custom-control-input" id="rememberMe">
+                            <label class="custom-control-label" for="rememberMe" style="color: #ffff;">Remember Me</label>
+                        </div>
+                        <a href="#" class="forgot-password" style="color: #ffff;">Forget Password?</a>
+                    </div>                    
+    
+                    <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
+                        <button type="submit" class="btn custom-submit-btn" style="font-weight: 700;">Masuk</button>
+                    </div>
+    
+                    <div class="separator">
+                        <div class="or-text" style="color: #ffff;">atau</div>
+                    </div>
+    
+                    <div class="form-group" style="display: flex; justify-content: center; align-items: center;">
+                        <button type="button" class="btn btn-google" style="border: 1px solid #ccc; padding: 5px; border-radius: 11px; width: 100%; margin-top: 3px; color: #ffff">
+                            <img src="../learn/assets/image/icon/icon.png" alt="Google Logo" style="width: 31px; height: 31px; margin-right: 10px; ">
+                            Masuk dengan Google
+                        </button>
+                    </div>
+    
+                    <div class="signup-text" style="text-align: center; margin-top: 17px; color: #d1cbcb;">
+                        Belum punya akun? Ayo <a href="#" style="color: #ffff;"> Daftar</a>
+                    </div>
+    
+                    <hr style="border: none; height: 1px; background-color: #ffffff; margin: 20px 0; margin-top: 23px;">
+
+                    <div class="text-container" style="text-align: center; font-size: 12px; color: #fff; margin-top: -5px;">
+                        Dengan melakukan pendaftaran, Anda setuju dengan 
+                        <a href="" style="color: #fff;">syarat & <br> ketentuan HomeCode</a>
+                    </div>                    
+
+                    <div style="text-align: center; font-size: 12px; color: #fff; margin-top: 7px;">
+                        This site is protected by reCAPTCHA and the Google 
+                        <a href="" style="color: #fff;">Privacy Policy and
+                        <br>
+                        <a href="" style="color: #fff;">Tearms of Service</a> apply.</a>
+                    </div>                
+                </form>
+            </div>
+        </div>
+    </section>
+    
+       
+
+
+
+
+    <!--- Area link Script Star --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--- Area link Script End --->
+
+
+    <!--- Area Link js Star --->
+    <script src="../learn/assets/js/main.js"></script>
+    <!--- Area Link js End --->
+</body>
+</html>
